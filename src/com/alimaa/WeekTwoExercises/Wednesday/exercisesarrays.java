@@ -30,13 +30,13 @@ public class exercisesarrays {
 // print the array to the console
 
 //        int[] empty = new int[3];  // commented this out as it's already stated above
-          Arrays.fill(empty,4);  // this fills the previously names array with the number for, using the function Array.fill()
+        Arrays.fill(empty, 4);  // this fills the previously names array with the number for, using the function Array.fill()
 //        we can modify arrays - we don't need a new variable we just need to modify
 
-         System.out.println(Arrays.toString(empty)); // printed this again so the above code can be returned
+        System.out.println(Arrays.toString(empty)); // printed this again so the above code can be returned
 
-        for (int i = 0; i < empty.length; i++){
-            empty[i]=4;
+        for (int i = 0; i < empty.length; i++) {
+            empty[i] = 4;
             // this is another way to print and change all the elements in the array to 4
         }
 
@@ -70,28 +70,58 @@ public class exercisesarrays {
 
         System.out.println("----------");
 
-//Q6 CREATING AN ARRAY FROM ANOTHER.
+//Q6a CREATING AN ARRAY FROM ANOTHER.
 // using your answer to Q5, create a second array which is initialised using your original array
 // hint: instead of using the `new` keyword, try simply giving the name of your original array
 // change the value at index 0 of the new array to "z"
 // print both of your arrays and compare
 
         String[] stringArray2 = StringArray;
-        // here we're saying our new decalred array i.e. stringArray2 is equal to the values of our inital array i.e. StringArray
-        stringArray2[0]="z";
-        // here we're replacing the index 0 in stringArray2 as "z"
+        // here we're saying our new declared array i.e. stringArray2 is equal to the values of our inital array i.e. StringArray
+        stringArray2[0] = "z";
+//        // here we're replacing the index 0 in stringArray2 as "z"
         System.out.println(Arrays.toString(stringArray2));
         // this is printing the new array
         System.out.println(Arrays.toString(StringArray));
         // here the initial array has the same output as the new array because it has the same reference point in our stack
         //passing by reference
 
+        System.out.println("----------");
+
 //Q6b
+// using your answer to Q5, create another array which is A COPY of your original array (using the `Arrays.copyOf()` method)
+// NOTE that the `.copyOf()` method accepts two arguments, first being the array that's being copied and second being the length of the new array
+// change the value at index 0 of the new array to "z"
+// print both of the arrays and compare
+
+//        String[] StringArray = {"a", "b", "c", "d"};  - part of the answer for 5
+
+        // New array which will be a copy of StringArray using the Arrays.copyOf method
+        // stating the name of the array that's being copied and the length of that array
+        String[] newArray = Arrays.copyOf(StringArray, StringArray.length);
+        // changing the value of index 0 in the new array to z
+        newArray[0] = "z";
+        // printing the old and new array
+
+        System.out.println(Arrays.toString(StringArray)); // output is [a, b, c, d]
+        System.out.println(Arrays.toString(newArray)); // output is [z, b, c, d]
+
+        System.out.println("----------");
 
 
-//Q7
+//Q7 LOOPING OVER AN ARRAY - PRINT
+// using your array from Q5, create a `for` loop which prints each item in the array
 
-        // the stuff after : colon is what were looping over
+        for (String str : StringArray) {
+            // this is more enhanced for loop giving it a temp variable name and stating that it's a String
+            System.out.println(str);
+            // printing my new temp variable
+        }
+
+        // the stuff after : colon is what were looping over - iterating over a collection
+        // variable we made on the left of the colon : is a temporary variable containing single element from collection of the right
+        // in this case we're looping over it and change its value to give us the new array
+        // so each iteration through loop - java pulls the next element from the collection and reassigns it to the temp variable
 
 //Q8
 

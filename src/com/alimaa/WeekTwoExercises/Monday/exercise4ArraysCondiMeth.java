@@ -19,6 +19,8 @@ public class exercise4ArraysCondiMeth {
             number = s.nextInt();
 
             // allows the user to input the number to check if its prime
+            // reads the next int that the user puts in
+            // then goes into the if else condition below
 
             if (isPrime(number)) {
                 System.out.println(""+ number +" number is a prime number!");
@@ -44,6 +46,7 @@ public class exercise4ArraysCondiMeth {
             }
             return true;
             // if not then return true
+        // if its true then it's not a prime
     }
 }
 

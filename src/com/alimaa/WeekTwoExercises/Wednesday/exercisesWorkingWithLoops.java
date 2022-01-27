@@ -84,5 +84,34 @@ public class exercisesWorkingWithLoops {
 // add each item to the sum value
 // print the total sum
 
+
+        // THIS WAS THE ANSWER FOR Q4
+//        int[]  nu4ArrayLoop = new int[11];
+//        for (int i =0; i <=10; i++ ){
+//        nu4ArrayLoop[i]=i;
+//        String output = Arrays.toString(nu4ArrayLoop);
+//        System.out.println(output);
+
+        // creating a variable with the name sum
+        int sum = 0;
+
+
+//        int[]  nu4ArrayLoop = new int[11]; --> didn't need to repeat it here again
+        for (int i = 0; i <= 10; i++) {
+            // for i loop that goes through the values
+            nu4ArrayLoop[i]=i;
+            // taking each index when it goes through the array and is referring to them as i as it goes through the loop
+    }
+        for (int sumTotals:nu4ArrayLoop) {
+            sum += sumTotals;
+            // created an enhanced for loop so - bec the numbers in the nu4ArrayLoop isn't going to change we can use this function
+            // the enhanced for loop is saying that the new variable sumTotal is now equal to or essentially the same as the values in nu4ArrayLoop
+            // sum =+sumTotal is saying to add the sum of each value in the sumTotal variable
+        }
+        System.out.println(sum);
+        // this is printing the sum
+
+// Q7
+
     }
 }
