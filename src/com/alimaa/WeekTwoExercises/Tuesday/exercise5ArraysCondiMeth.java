@@ -29,18 +29,19 @@ public class exercise5ArraysCondiMeth {
 
         //LOOP THROUGH IF "YES" IF NOT EXIT
         boolean keepAsking = true;
+        // boolean is automatically false so need to state that its true in this case
 
         while (keepAsking) {
-            input = userInput();
-            // this will keep asking the question if the user returns Yes,yes or y
-            if (input.equals("Yes") || input.equals("yes") || input.equals("y")) {
+            input = userInput(); // this is calling on the method that takes the users input and repeats the questions
+            if (input.equals("Yes") || input.equals("yes") || input.equals("y")) { // this will keep asking the question if the user returns Yes,yes or y
                 System.out.println("Here's your joke");
-                displayingRandomJokes();
+                displayingRandomJokes(); // this is calling on the random generator function
                 // if user writes Yes, yes or y then the method before will be invoked
 //                displayingRandomJokes();
             } else if (input.equals("No") || input.equals("no") || input.equals("n")) {
                 System.out.println("You said no, so you have exited.");
                 keepAsking = false;
+                // need to state that the boolean 'keepasking' is false otherwise even if users input no then it will repeat the question
                 // this --> || means or so if the user in puts either No no or n then it will exit the loop
             } else {
                 // if any other input aside from Yes(yes,y) and No (no,n) it will print this -->
@@ -52,20 +53,20 @@ public class exercise5ArraysCondiMeth {
     // METHODS TO INVOKE
      static void displayingRandomJokes() {
         String[]randomJokesArray = new String[3];
-        // using an array
+        // using an array // this is an alternative way of writing an array i.e. if you know what all your Index will be and if they aren't going to change
         randomJokesArray[0] = "I can’t believe I got fired from the calendar factory. All I did was take a day off!";
         randomJokesArray[1] = "Money talks. Mine always says goodbye.";
         randomJokesArray[2] = "I went to see the doctor about my short-term memory problems — the first thing he did was make me pay in advance.";
         // these are my jokes that I've included in an array, so if 0 is called it will print "I can't believe I got fired..."
 //        System.out.println(Arrays.toString(randomJokesArray));
          Random randomNumber = new Random();
-         // this is the random number generator
+         // this is the random number generator function
          int i =randomNumber.nextInt(randomJokesArray.length);
          System.out.println(randomJokesArray[i]);
 
     }
 
-    static String userInput() {
+    static String userInput() { // this takes in the users input and returns the questions
         Scanner n = new Scanner(System.in);
         System.out.println("Want to hear a joke?");
         System.out.println("Yes/No");
