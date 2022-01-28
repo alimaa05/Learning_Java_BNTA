@@ -1,8 +1,6 @@
 package com.alimaa.WeekTwoExercises.Tuesday;
 
-import java.util.Scanner;
-
-public class day2ClassNotes {
+public class Day2MethodsClassNotes {
 
 
     // SIMPLE EXAMPLE OF USING METHODS

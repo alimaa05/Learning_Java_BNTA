@@ -1,5 +1,4 @@
 package com.alimaa.WeekTwoExercises.Wednesday;
-import jdk.swing.interop.SwingInterOpUtils;
 
 
 import java.time.LocalDate;
@@ -7,7 +6,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Random;
 
-public class day3ClassNotes {
+public class Day3EnumsDatesErrorsClassNotes {
 
     // GOING OVER RANDOM OPERATOR
         public static void main(String[] args) {

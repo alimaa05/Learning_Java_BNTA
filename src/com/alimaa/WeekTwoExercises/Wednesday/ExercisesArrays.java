@@ -1,10 +1,11 @@
 package com.alimaa.WeekTwoExercises.Wednesday;
 
+import javax.swing.*;
 import java.util.Arrays;
 
-public class exercisesarrays {
+public class ExercisesArrays {
 
-    public static void main(String[] args) {
+    public static boolean main(String[] args) {
 
 //Q1 DECLARE INGETER ARRAY WITH LENGTH OF 3
 // declare an empty integer array of length = 3
@@ -123,8 +124,66 @@ public class exercisesarrays {
         // in this case we're looping over it and change its value to give us the new array
         // so each iteration through loop - java pulls the next element from the collection and reassigns it to the temp variable
 
-//Q8
 
+        System.out.println("----------");
+
+//Q8 LOOPING OVER AN ARRAY - INITIALISATION
+// declare a new array which can hold the numbers from 1-10 (inclusive)
+// create a `for` loop which initialises this array with the numbers 1-10
+// print the array to the console
+
+        int[] numbersToTen = new int[10];
+
+        for (int i = 0; i < 10; i++) {
+            numbersToTen[i] = i + 1;
+        }
+        System.out.println(Arrays.toString(numbersToTen));
+
+
+        System.out.println("----------");
+
+// Q9 LOOPING OVER AN ARRAY REASSIGNMENT
+// adding onto your example from Q8, now create a second `for` loop which reassigns each value in the array to be double the initial value
+// again print the array
+
+        for (int i = 0; i < 10; i++) {
+            numbersToTen[i] = numbersToTen[i] * 2;
+        }
+        System.out.println(Arrays.toString(numbersToTen));
+
+        System.out.println("----------");
+
+//Q10 LOOPING TO CHECK FOR A SPECIFIED VALUE
+// start from your solution to Q5
+// create a String variable called `condition` which has the value "c"
+// create a Boolean variable called `hasC` which has the value `false`
+// create a `for` loop which goes through each item in our array, comparing it against our `condition` variable
+// if the two are equal, change the `hasC` value to `true`
+// once the `for` loop concludes, print out a message which tells you if `hasC` is `true` or `false`
+
+//        String[] StringArray = {"a", "b", "c", "d"};
+
+//        System.out.println(Arrays.toString(StringArray));
+
+
+        String conditions = "c";
+// creating a string variable called conditions with a value of c
+        boolean hasC = false;
+
+        // creating a boolean called hasC that equals false
+//        for () {
+//
+//        }
+////            if () ;{
+//            return hasC;
+//            System.out.println("hasC is false");
+//        } else {
+//                return true;
+//                System.out.println("hasC is true");
+//            }
+//
+        return hasC;
     }
 
 }
+

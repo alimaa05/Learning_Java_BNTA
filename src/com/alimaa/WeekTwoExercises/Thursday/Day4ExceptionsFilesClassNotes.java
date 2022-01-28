@@ -11,9 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-import java.io.IOException;
-
-public class day4ClassNotes {
+public class Day4ExceptionsFilesClassNotes {
 
     public static void main(String[] args) {
 

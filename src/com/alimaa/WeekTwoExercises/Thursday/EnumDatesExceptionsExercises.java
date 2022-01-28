@@ -1,8 +1,6 @@
 package com.alimaa.WeekTwoExercises.Thursday;
 
-import com.alimaa.WeekTwoExercises.Wednesday.WeatherSeason;
-
-public class EnumDatesExceptions {
+public class EnumDatesExceptionsExercises {
 
     public static void main(String[] args) {
 

@@ -1,10 +1,8 @@
 package com.alimaa.WeekTwoExercises.Thursday;
 
-import java.security.PublicKey;
-import java.util.Locale;
 import java.util.Arrays;
 
-public class writingMethods {
+public class ExerciseWritingMethods {
 
     public static void main(String[] args) {
 
