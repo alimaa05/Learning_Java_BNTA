@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class ExercisesArrays {
 
-    public static boolean main(String[] args) {
+    public static void main(String[] args) {
 
 //Q1 DECLARE INGETER ARRAY WITH LENGTH OF 3
 // declare an empty integer array of length = 3
@@ -167,23 +167,25 @@ public class ExercisesArrays {
 
 
         String conditions = "c";
-// creating a string variable called conditions with a value of c
+        // creating a string variable called conditions with a value of c
         boolean hasC = false;
-
         // creating a boolean called hasC that equals false
-//        for () {
-//
-//        }
-////            if () ;{
-//            return hasC;
-//            System.out.println("hasC is false");
-//        } else {
-//                return true;
-//                System.out.println("hasC is true");
-//            }
-//
-        return hasC;
-    }
 
+        for (String throughArray : StringArray) { // creating a enhanced for loop where it's looping through the values of the array in Q5
+            if (throughArray == conditions) {
+                // this is comparing our new temporary variable that looped thought the previous array as being equal to c
+                // i.e. it's comparing and seeing if it contains c
+                hasC = true;
+                // this is saying, if our temporary variable does contain c then hasC is true
+            }
+        }
+
+        if (hasC) { // the loop has now concluded and this is printing a statement whether the new variable conditions i.e. c is in the array or not
+            System.out.println("hasC is true " + conditions + " is in this array ");
+        } else {
+            System.out.println("hasC is false " + conditions + " is not in this array ");
+        }
+
+    }
 }
 
