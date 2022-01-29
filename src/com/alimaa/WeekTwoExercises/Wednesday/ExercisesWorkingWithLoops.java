@@ -1,9 +1,8 @@
 package com.alimaa.WeekTwoExercises.Wednesday;
 
 import java.util.Arrays;
-import java.util.Locale;
 
-public class exercisesWorkingWithLoops {
+public class ExercisesWorkingWithLoops {
     public static void main(String[] args) {
 
 //Q1
@@ -164,11 +163,52 @@ public class exercisesWorkingWithLoops {
 
 
         //FIRST ATTEMPT
-        int[] numberQ9 = {1, 6, 17, 9, 20, 5};
-        for (int i = 0; i <= numberQ9.length; i++) {
-            numberQ9[i] = numberQ9[i];
+//        int[] numberQ9 = {1, 6, 17, 9, 20, 5};
+//        for (int i = 0; i <= numberQ9.length; i++) {
+//            numberQ9[i] = numberQ9[i];
+//        }
 
+        //SECOND ATTEMPT - USING STACK OVERFLOW and OTHER WEBSITE
+        int[] numberQ92 = new int[]{1, 6, 17, 9, 20, 5}; // initialising the array
+        int greaterNumber = numberQ92[0]; // initialise a variable for the greatest number with the first element of the array
+
+        for (int i = 0; i < numberQ92.length; i++) { //loop through the array
+            if (numberQ92[i] > greaterNumber);
+            greaterNumber = numberQ92[i]; // compare the elements of the array with the variable max
         }
+        System.out.println("The largest number in the array " + greaterNumber); // print greatest number
+
+        System.out.println("The original values in the array " + Arrays.toString(numberQ92)); // print original array
+
+        System.out.println("-----------");
+
+        // SLIGHT ADJUSTMENT TO THE CODE --> LINE 189
+        int[] numberQ93 = new int[]{1, 6, 17, 9, 20, 5}; // initialising the array
+        int greaterNum = numberQ93[0]; // initialise a variable for the greatest number with the first element of the array
+
+        for (int i = 0; i < numberQ92.length; i++) { //loop through the array
+            if (numberQ93[i] > greaterNum) {greaterNum = numberQ93[i];} // THIS IS HOW THE COMPARISON SHOULD BE WRITTEN
+            // - compare the elements of the array with the variable max
+        }
+        System.out.println("The largest number in the array " + greaterNum); // print greatest number
+
+        System.out.println("The original values in the array " + Arrays.toString(numberQ92)); // print original array
+
+        System.out.println("-----------");
+
+        // SOLUTION
+        // QUESTION 9 EXAMPLE SOLUTION
+
+        int[] numArray = new int[]{1, 6, 17, 9, 20, 5}; //initialise array
+
+        int maxNum = 0; // initialise variable for the greatest number
+
+        for (int number : numArray) { // looping through the array using a temp variable
+            if (number > maxNum) {maxNum = number;} // comparing the temp variable elements to the greatest num variable
+        }
+        System.out.println(maxNum); // printing the greatest number
+
+
 
 
     }

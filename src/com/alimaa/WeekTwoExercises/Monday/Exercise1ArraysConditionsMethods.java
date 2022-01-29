@@ -1,6 +1,6 @@
 package com.alimaa.WeekTwoExercises.Monday;
 
-public class exercise1ArraysCondiMeth {
+public class Exercise1ArraysConditionsMethods {
     /*
       Write a method that reverses any String and print to console
       Input should be a string

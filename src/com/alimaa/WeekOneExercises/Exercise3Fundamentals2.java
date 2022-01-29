@@ -1,6 +1,6 @@
 package com.alimaa.WeekOneExercises;
 
-public class exercise3Fundamentals2 {
+public class Exercise3Fundamentals2 {
     public static void main(String[] args) {
         /*
             Write a program that reverses an array of Strings

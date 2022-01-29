@@ -6,7 +6,7 @@ public class EnumDatesExceptionsExercises {
 
 
 //Q2 PRINT AND RUN CODE FOR THE T-SHIRT SIZE ENUM
-        System.out.println("T Shirt Sizes: " + exercise1TshirtSizeEnums.XXS);
+        System.out.println("T Shirt Sizes: " + Exercise1TshirtSizeEnums.XXS);
         // this is how you print enums within normal java class
 
 
@@ -15,8 +15,7 @@ public class EnumDatesExceptionsExercises {
 // hint: while you loop through enums invoke .name() to convert enum to string. without it, you can't lowercase
 
         //invoking .values() to the enum
-        exercise1TshirtSizeEnums [] tShirtSize = exercise1TshirtSizeEnums.values();
-
+        Exercise1TshirtSizeEnums[] tShirtSize = Exercise1TshirtSizeEnums.values();
 
     }
 

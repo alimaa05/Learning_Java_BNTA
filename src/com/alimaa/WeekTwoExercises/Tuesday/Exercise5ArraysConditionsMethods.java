@@ -14,7 +14,7 @@ import java.util.Scanner;
             if no then program should exit
     */
 
-public class exercise5ArraysCondiMeth {
+public class Exercise5ArraysConditionsMethods {
 
     public static void main(String[] args) {
 

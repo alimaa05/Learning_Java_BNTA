@@ -1,6 +1,6 @@
 package com.alimaa.WeekOneExercises;
 
-public class exercise4Fundamentals2 {
+public class Exercise4Fundamentals2 {
     public static void main(String[] args) {
         /*
            Write a program that adds total amount for this string "0.90, 1.00, 9.00, 8.78, 0.01".

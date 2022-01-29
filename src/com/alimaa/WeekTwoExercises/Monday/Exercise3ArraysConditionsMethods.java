@@ -2,7 +2,7 @@ package com.alimaa.WeekTwoExercises.Monday;
 
 import java.util.Scanner;
 
-public class exercise3ArraysCondiMeth {
+public class Exercise3ArraysConditionsMethods {
 
         /*
           Write a program that receives numbers as program arguments and prints to console if numbers are even or odd

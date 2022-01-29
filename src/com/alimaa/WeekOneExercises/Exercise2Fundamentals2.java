@@ -1,6 +1,6 @@
 package com.alimaa.WeekOneExercises;
 
-public class exercise2Fundamentals2 {
+public class Exercise2Fundamentals2 {
     public static void main(String[] args) {
         /*  Write a program that compares two String contents. i.e x > y
             Create 3 variables.

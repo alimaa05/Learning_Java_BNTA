@@ -1,6 +1,6 @@
 package com.alimaa.WeekTwoExercises.Monday;
 
-public class exercise2ArraysCondiMeth {
+public class Exercise2ArraysConditionsMethods {
     /*
       Given the following String input
       String input = "   b ri   ght net   work  "

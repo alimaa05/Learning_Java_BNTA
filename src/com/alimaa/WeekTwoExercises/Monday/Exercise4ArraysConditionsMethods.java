@@ -2,7 +2,7 @@ package com.alimaa.WeekTwoExercises.Monday;
 
 import java.util.Scanner;
 
-public class exercise4ArraysCondiMeth {
+public class Exercise4ArraysConditionsMethods {
 
         /*
           Write a program that takes an input number from the console and prints if number is prime

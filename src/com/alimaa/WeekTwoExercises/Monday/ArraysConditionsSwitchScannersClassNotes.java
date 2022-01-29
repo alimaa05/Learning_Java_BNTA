@@ -2,7 +2,7 @@ package com.alimaa.WeekTwoExercises.Monday;
 
 import java.util.Arrays;
 
-public class Day1ArraysCondiSwitchScannersClassNotes {
+public class ArraysConditionsSwitchScannersClassNotes {
 
 
         public static void main(String[] args) {

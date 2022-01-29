@@ -1,7 +1,7 @@
 package com.alimaa.WeekOneExercises;
 
 
-public class exercise5Fundamentals2 {
+public class Exercise5Fundamentals2 {
     /*
        Write a program that takes numbers from the program args and loops through args and print each item in args
        Compile using: javac and run using: java

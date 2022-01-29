@@ -1,6 +1,6 @@
 package com.alimaa.WeekTwoExercises.Friday;
 
-public class Day5OOPClassNotes {
+public class OOPClassNotes {
 
 // OBJECT ORIENTED PROGRAMMING PART 1
 

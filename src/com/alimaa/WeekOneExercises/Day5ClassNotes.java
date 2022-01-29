@@ -1,6 +1,6 @@
 package com.alimaa.WeekOneExercises;
 
-public class day5ClassNotes {
+public class Day5ClassNotes {
 
         public static void main(String[] args) {
 

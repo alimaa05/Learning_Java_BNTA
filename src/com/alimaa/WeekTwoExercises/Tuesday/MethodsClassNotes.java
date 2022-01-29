@@ -1,6 +1,6 @@
 package com.alimaa.WeekTwoExercises.Tuesday;
 
-public class Day2MethodsClassNotes {
+public class MethodsClassNotes {
 
 
     // SIMPLE EXAMPLE OF USING METHODS
