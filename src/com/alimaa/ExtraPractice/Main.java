@@ -2,6 +2,7 @@ package com.alimaa.ExtraPractice; // this is the PACKAGE
 
 import javax.management.ValueExp;
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class Main { // this is the CLASS
 
@@ -136,15 +137,17 @@ public class Main { // this is the CLASS
         System.out.println("before changing alex");
         System.out.println(alex.name + " " + mariam.name); // both alex and marian are pointing to the initial object
 
-        alex.name  = "Alexander";  // mariam changes to alexander as well because they are pointing to the same reference
+        alex.name = "Alexander";  // mariam changes to alexander as well because they are pointing to the same reference
 
         System.out.println("after changing alex");
         System.out.println(alex.name + " " + mariam.name);
     }
+
     static class Person { // this is a class where we can create reference types or i.e. objects
         String name;
+
         Person(String name) {
-            this.name =name;
+            this.name = name;
         }
         // with ref types is diff to primitives and how objects are stored in the memory
         // Person("Alex") - this is the object, and it's somewhere in the memory
@@ -158,7 +161,7 @@ public class Main { // this is the CLASS
 
     //should name your variables in ways that make a lot of sense
     int number = 0;
-//    int number = 1; // this clashes
+    //    int number = 1; // this clashes
     double pi = 2.1415;
 
     // need to name the variables in clear ways, that the variable corresponds to the actual value
@@ -198,7 +201,7 @@ public class Main { // this is the CLASS
 //        String fullName = name + " " + surname;
 //        System.out.println(fullName);
 
-        // this also works with numbers but the entire thing will still be a string
+    // this also works with numbers but the entire thing will still be a string
 
     // can also do the following --> String fullName = name.concat(" ").concat(surname);
 
@@ -221,15 +224,15 @@ public class Main { // this is the CLASS
 
 // int public = 0; --> we won't be able to use public as a variable name because it's a reserved keyword
 
-   // CAN'T USED RESERVED KEYWORDS FOR OUR VARIABLES, METHODS, CLASSES ETC.
+    // CAN'T USED RESERVED KEYWORDS FOR OUR VARIABLES, METHODS, CLASSES ETC.
 
-// ARITHMETIC OPERATIONS
+    // ARITHMETIC OPERATIONS
 // ---------------------------------------------
-   int ten = 10;
-   int two = 2;
-   int addition = ten + two;
+    int ten = 10;
+    int two = 2;
+    int addition = ten + two;
 
-   // can easily do this -->
+    // can easily do this -->
 //    System.out.println(10 + 2);
 //    System.out.println(10 - 2);
 //    System.out.println(10 * 2);
@@ -258,7 +261,7 @@ public class Main { // this is the CLASS
 // allows us to compare values
 // performs operations of two or more numbers
 
-    int khalidAge =18;
+    int khalidAge = 18;
     int mariamAge = 20;
     boolean isKhalidOlderThanMariam = khalidAge > mariamAge;
     //THESE ARE BOOLEAN EXPRESSIONS
@@ -293,7 +296,6 @@ public class Main { // this is the CLASS
     // using ! to say is not - it will flip the value
 
 
-
 // IF STATEMENTS
 // ---------------------------------------------
 
@@ -306,7 +308,7 @@ public class Main { // this is the CLASS
 //        System.out.println("I am almost an adult");
 //    } else {
 //        System.out.println("I am not an adult"); // code stops here
-        // this line of code is looked at last only if all the other statements are false will it print this
+    // this line of code is looked at last only if all the other statements are false will it print this
 //    }
 
 // TERNARY OPERATOR
@@ -322,7 +324,7 @@ public class Main { // this is the CLASS
 // SWITCH STATEMENTS
 // ---------------------------------------------
 
-// falls under same category as if statement but slightly different
+    // falls under same category as if statement but slightly different
     String gender = "FEMALE";
 //    if (gender.equals("FEMALE")) {
 //
@@ -348,7 +350,7 @@ public class Main { // this is the CLASS
 //        default: // default if none of the cases above are met
 //            System.out.println("unknown gender");
 
-            //switch statements are neater and should be used when performing if condition only on one value
+    //switch statements are neater and should be used when performing if condition only on one value
 
 // ARRAYS (BONUS VIDEO)
 // ---------------------------------------------
@@ -362,7 +364,7 @@ public class Main { // this is the CLASS
 
 // arrays allow us to make one variable that holds more than one value
 
-int[] numberz = new int[2]; // need to specify the data type followed by square brackets --> this is currently an empty array
+    int[] numberz = new int[2]; // need to specify the data type followed by square brackets --> this is currently an empty array
     // need a name for our array
     // need to call on the object
     // need to state the number of values that will be in our array
@@ -376,27 +378,316 @@ int[] numberz = new int[2]; // need to specify the data type followed by square 
 //    numberz[2] = 2; // when you initialise the size you can't change it
 
     // there is a much easier way to do all of that
-    int [] numberss = {2, 0, 1}; // int array - this array doesn't specify the size, it's whatever number you add or what ever nu of values you add
+    int[] numberss = {2, 0, 1}; // int array - this array doesn't specify the size, it's whatever number you add or what ever nu of values you add
     // here you don't have to initialise the actual size of the array, so you can add values
 
 //    System.out.println(numberss.length);
 // this prints and tells us how many values within our array
 
-    String [] namez ={ "Ali", "Maria"}; // String array
+    String[] namez = {"Ali", "Maria"}; // String array
 
 // ARRAYS AND INDEXES
 // ---------------------------------------------
 
 // if you want call on specific element within a specific index within the array
 
-//    int [] numberss = {2, 4, 5, 7, 4, 10};
+    //    int [] numberss = {2, 4, 5, 7, 4, 10};
     int number2 = numberss[2]; // storing it in a variable then grabbing the index 2 within the array
     int four = numberss[numberss.length - 1]; // need the minus one because to grab the index we need to start with the 0 index
-
 
 
 // ++ & --
 // ---------------------------------------------
 
+// i++ and i--
+
+    //i++ takes the current value and increment it by 1 i.e. taking a value and then adding 1
+    // i-- takes the current value and decrements it by 1
+    // only use i++ and i-- when incrementing and decrementing by 1
+    // i++ and i-- is the actual short hand version we should use to increase by 1
+
+
+    // if we want to increment by 2 then we do i + 2
+
+    // can also do this --> number+=2  --> number + = is incrementing the number by 2
+
+// ENHANCED FOR LOOP
+// ---------------------------------------------
+
+// better version of looping through arrays
+
+//    for (int number : numbers){ // for numbers, take the individual values of numbers one by one and put it in the variable numbers
+//        System.out.println(number); // this type of loo[ doesn't have actaul access to the index
+
+// if you put your variable followed by .for then the IDE can automatically put the code in for the loop
+
+// BREAK AND CONTINUE
+// ---------------------------------------------
+
+    // break keyword allows us to break out of the loop
+    // e.g.
+    String[] names = {"Anna", "Ali", "Bob", "Mike"}; // this is our String array
+//    for(
+//    String name:names)
+
+    { // this is the enhanced for loop, so for every element in names will be put into the new variable name
+        if (name.equals("Bob")) { // this is saying if name is equal to Bob, then to break out of the for loop
+//            break;  //it will then print all the names up to Bob
+        }
+        System.out.println(name); // if name wasn't equal to Bob then it would continue and print all the names
+    }
+
+    // continue - rather than breaking out of the loop, it will go back to the beginning of the loop
+    //e.g.
+//    String[] names = {"Anna", "Ali", "Bob", "Mike"};
+//    for(String name:names) {
+//        if (name.startsWith("A")) {
+//            continue; // if name does start with a we go back to the beginning, otherwise it will go on
+//        }
+//        System.out.println(name); // this will bring Bob and Mike
+//    }
+
+
+// WHILE LOOP
+// ---------------------------------------------
+
+// allows us to loop while the boolean expression evaluates as true
+
+//    while (true) { // the thing in the brackets is the actual boolean expression - the while loop won't run if it has false in the bracket
+//        System.out.print.ln("hi"); // the stuff inside the curly brackets is what's inside the while loop
+//    } // if we just do this then the while loop with run and print hi forever
+
+
+    int count = 0;
+//     while (count <=20) { // this is saying while count is less than or equal to 20 then it will bring what's in the while loop
+//         System.out.println("count " + count);
+//         count ++; // incrementing by 1
+    // the output will only return count up to 20 because that's what we specified within the while loop
+
+
+// DO WHILE
+// ---------------------------------------------
+
+    // executes no matter what at least once
+
+//    do {
+//        System.out.println(count); // it's saying to do this, and it will print it once, while the code below is still happening
+//        count++;
+//    } while (count <= 20);  // and even if the while condition is not true it will still print the do
+
+
+// TAKING USER INPUT WITH THE SCANNER CLASS
+// ---------------------------------------------
+
+// Scanner allows us to take user input into the console
+
+//    Scanner scanner = new Scanner(System.in); // the scanner variable can now take user input
+//    System.out.println("What is your name?");
+//    String username = scanner.nextLine(); // takes the actual user input - next line means takes the actual string from the console
+//    System.out.println("Hello " + username); // this will print hello followed by the input put in by the user
+//
+//    // adding the following code will allow user input and gives info about the year they were born
+//    System.out.println( "How old are you?"); // this prints first
+//    int age = scanner.nextInt();// then takes in the users input when they put a number
+//    int year = LocalDate.now().minusYears(age).getYear(); // this runs the process of finding the year they were born - i.e. taking the date now and minus the years of their age and printing that year
+//    System.out.println("You were born in " + year); // printing the year they were born
+
+// METHODS
+// ---------------------------------------------
+
+    // a block of code that's only run when called on
+    // can pass data in methods i.e. parameters
+    // methods are used to perform any logic i.e. perform any actions or any piece of code that does something
+
+    // there's two types of methods 1) built-in methods  2)user pre-defined methods
+    // built-in methods - methods provided by the java runtime environment
+    // user pre-defined methods - methods we build ourselves
+
+//    e.g. System.out.println(); // println is a method - within the parenthesis implies that we are invoking the actual method
+    // methods can pass data i.e. parameters
+
+//    e.g. String brand = "Samsung";
+    //  System.out.println(brand.toUpperCase()); // toUpperCase is also a method that we invoke
+    //  - in this specific method we aren't passing any data it simply transforms the value "Samsung"
+
+    // Java has classes like String that have build-in methods that can be used for the classes
+
+// UNDERSTANDING METHODS
+// ---------------------------------------------
+
+    // public static void main(String[] args) --> this is a method itself
+    char[] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D'};                            // this is all within the main method
+//    int count = countOccurrences(letters); // this is invoking the method
+//    System.out.println(count); // now printing the count value
+
+    // outside the main method
+    public static int countOccurrences() { // public means this method is accessible by other classes
+        return 0;
+    }                                       // static means this method belongs to a class
+    // int is the return type of the method
+    // countOccurrences is the method
+    //() is what we can pass into our method
+
+    // to INVOKE the method/ calling on the method --> you do this in the main method sections
+
+    // to pass data inside the method do the following -- // look at the above commented code as well
+    public static int countOccurrences(char[] letters) { // now this method can accept an array of characters
+        // where we invoke the method in the main method need to give an argument within the parenthesis that matches the return data type
+        return -1;
+
+        // so it would look something like this -->
+
+        // public static void main(String[] args) --> inside the main method
+//        char[] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D'};
+//        int count = countOccurrences(letters);
+//        System.out.println(count);
+//
+//        // outside the main method
+//        public static int countOccurrences(char[] letters) {
+//            System.out.println("Method countOccurrence was invoked");
+//            return -1;
+    }
+
+// USER DEFINED METHODS
+// ---------------------------------------------
+
+//E.G.
+// char[] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D'};
+//        int count = countOccurrences(letters, 'N );      // within main method
+//        System.out.println(count);
+//
+//        // outside the main method
+//        public static int countOccurrences(char[] letters, char searchLetter) {
+//            int count =0;
+//            for (char letter : letters) {
+//               if (letter == searchLetter) {
+//                   count ++;
+//           }
+//       }
+//            return count;
+
+
+// CLASSES AND OBJECTS
+// ---------------------------------------------
+
+    // OBJETS -anything that can represent something in the real world e.g. car, headphones etc.
+    // CLASS - a template or blueprint for creating these objects
+
+    // e.g
+    String passportNumber = new String(" 12345"); // passportNumber is now an object - objects have properties and behaviours
+    // properties of the object you can find by using . e.g.
+//    passportNumber.
+    // String is the template for creating sequences of characters
+    // in this case the object has been created based off the String class template
+
+    // the way we know something is an object or not is through the keyword new, followed by the class - indicates that you are creating an object
+
+
+// CLASSES
+// ---------------------------------------------
+
+    // class is a template for anything in the real world i.e. for objects
+    // E.G. a camera lens
+    // lenses are constructed in their own way - you have a template for the lens and then from that you can create more lenses maybe with different attributes
+    // the camera lens would be the object - the classes is what creates the object i.e. the template for the object
+
+// CREATING CLASSES
+// ---------------------------------------------
+
+    // creating a class that allows to create lenses
+    static class Lens {
+        String brand;
+        String focalLength;
+        boolean isPrime;
+
+        Lens(String brand,
+             String focalLength,
+             boolean isPrime) {
+            // this is constructor - it's how we construct objects
+            this.brand = brand;
+            this.focalLength = focalLength;
+            this.isPrime = isPrime;
+            // this --> is referring to the current instance of the current class
+        }
+    }
+    // THIS ENTIRE BIT OF CODE ABOVE IS OUT CLASS - ITS ARE BLUEPRINT, OUR TEMPLATE FOR CREATING THE OBJECT LENSES
+
+    // we want to you this class and call on it within out main method
+
+// CREATING OBJECTS
+// ---------------------------------------------
+
+    // to create a lens i.e. an object based on the template above
+    // it will be within the main method
+//    public static void main(String[] args){  // lensOne variable is now our object - we used the keyword new to do this
+    Lens lensOne = new Lens(
+            "sony",
+            "85mm",
+            true);
+    // in the constructor we said we accept the brand, focalLength and whether its prime - so here we can state those within our object
+
+    // the class (i.e. template) we created above allows us to create as many lenses
+
+    Lens lensTwo = new Lens(
+            "sony",
+            "35mm",
+            true);
+
+    Lens lensThree = new Lens(
+            "Canon",
+            "20-70mm",
+            false);
+    // i.e. objects as we want, and we can make small changes to the attributes of each lens i.e. it could be a diff brand or have a different focalLength
+
+
+// PRINTING OBJECT ATTRIBUTES
+// ---------------------------------------------
+
+//    System.out.println("Lens 1");
+//    System.out.println(lensOne.brand);
+//    System.out.println(lensOne.focalLength);
+//    System.out.println(lensOne.isPrime);
+//
+//    System.out.println("Lens 2");
+//    System.out.println(lensTwo.brand);
+//    System.out.println(lensTwo.focalLength);
+//    System.out.println(lensTwo.isPrime);
+//
+//    System.out.println("Lens 3");
+//    System.out.println(lensThree.brand);
+//    System.out.println(lensThree.focalLength);
+//    System.out.println(lensThree.isPrime);
+
+
+// REPRESENTING A PASSPORT USING CLASSES AND OBJECTS
+// ---------------------------------------------
+
+    static class Passport { // this is are class called Passport and it has capital letter
+        String number;
+        LocalDate expiryDate;
+
+
+        // this is out constructor -->
+        Passport(String number, LocalDate expiryDate) { // String number and LocalDate expiryDate refers to the current instance of the current class
+            this.number = number;
+            this.expiryDate = expiryDate;
+        }
+    } // so this is our template i.e. the Passport class
+
+    // Below is the object Passport
+    Passport ukPassport = new Passport(
+            "12234",
+            LocalDate.of(2025,1, 1 ));
+
+    Passport usPassport = new Passport(
+            "12288",
+            LocalDate.of(2030,1, 1 ));
+
 
 }
+
+
+
+
+
+
