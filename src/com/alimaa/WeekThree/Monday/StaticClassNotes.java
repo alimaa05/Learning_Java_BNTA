@@ -15,7 +15,7 @@ public class StaticClassNotes {
     // don't use static when creating the method and then when calling on it need to call to the object
 
     // CLASSES --> three types
-    // 1) POJO - plain old java object - blueprints to you objects - just models your object - e.g. object -->  bed, car, computer monitor
-    // 2) classes that represent business logic (DATA ACCESS SERVICE)(add service at the end means that it's used for business logic)- all the steps/criteria we need to take/ conditions need to check while your building your code
-    // 3) classes that interact with any database
+    // 1) POJO - plain old java object (POJO) - basic classes where we set properties and constructors -- blueprints to you objects, they just models your object - e.g. object -->  bed, car, computer monitor
+    // 2) classes that represent business logic (SERVICE) - all the steps/criteria we need to take/ conditions need to check while your building your code (add service at the end means that it's used for business logic)
+    // 3) classes that interact with any database (DAO - DATA ACCESS OBJECT)
 }
