@@ -1,4 +1,4 @@
-package com.alimaa.JavaFundamentals2;
+package com.alimaa.Loops;
 
 public class LoopsLessonNotes {
 

@@ -78,7 +78,7 @@ public class Main {     // MAIN CLASS
         System.out.println("-----------------");
 
         DealershipService dealershipServiceNu2 = new DealershipService(dealership1); // THIS OBJECT IS RETURNING THE NUMBER OF CARS THE DEALERSHIP CURRENTLY HAS IN STOCK
-        System.out.println("Number of cars in"  + dealership1 + " : " + dealershipService.countingCars(dealership1));
+        System.out.println("Number of cars in "  + dealership1 + " is : " + dealershipService.countingCars(dealership1));
 
     }
 
