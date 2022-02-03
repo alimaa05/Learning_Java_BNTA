@@ -15,7 +15,9 @@ public class Car {      // CAR CLASS
     private int price;
     private EngineType engineType; // Enum type
 
-    public Car(String manufacturer, int price, EngineType engineType) {  // CONSTRUCTOR
+    public Car(String manufacturer,
+               int price,
+               EngineType engineType) {  // CONSTRUCTOR
         this.manufacturer = manufacturer;
         this.price = price;
         this.engineType = engineType;

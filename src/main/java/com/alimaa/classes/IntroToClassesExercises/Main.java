@@ -59,26 +59,37 @@ public class Main {     // MAIN CLASS
         CarDealership dealership = new CarDealership(
                 "Dealership",
                 15);
-        System.out.println(dealership.toString());
-        System.out.println("-----------------");
+//        System.out.println(dealership.toString());
+//        System.out.println("-----------------");
         // first dealership object
         // properties of the first dealership
 
         CarDealership dealership1 = new CarDealership(
                 "Dealership1",
                 10);
-        System.out.println(dealership1.toString());
-        System.out.println("-----------------");
+//        System.out.println(dealership1.toString());
+//        System.out.println("-----------------");
         // second dealership object
         // properties of the second dealership
 
-        DealershipService dealershipService = new DealershipService(dealership); // THIS OBJECT IS RETURNING THE NUMBER OF CARS THE DEALERSHIP CURRENTLY HAS IN STOCK
-        System.out.println("Number of cars in " + dealership + " : "  + dealershipService.countingCars(dealership));
+
+
+// THIS OBJECT IS RETURNING THE NUMBER OF CARS THE DEALERSHIP CURRENTLY HAS IN STOCK
+
+
+        DealershipService dealershipService = new DealershipService();
+        System.out.println("Number of cars in " + dealership + " = " );
+        System.out.println(dealershipService.countingCars(dealership,firstCar));
+//        System.out.println(firstCar + dealership);
 
         System.out.println("-----------------");
 
-        DealershipService dealershipServiceNu2 = new DealershipService(dealership1); // THIS OBJECT IS RETURNING THE NUMBER OF CARS THE DEALERSHIP CURRENTLY HAS IN STOCK
-        System.out.println("Number of cars in "  + dealership1 + " is : " + dealershipService.countingCars(dealership1));
+//        DealershipService dealershipService = new DealershipService(dealership1,secondCar);
+        System.out.println("Number of cars in " + dealership1 + " = " );
+        System.out.println(dealershipService.countingCars(dealership1,secondCar));
+//
+//        DealershipService dealershipServiceNu2 = new DealershipService(dealership1); // THIS OBJECT IS RETURNING THE NUMBER OF CARS THE DEALERSHIP CURRENTLY HAS IN STOCK
+//        System.out.println("Number of cars in "  + dealership1 + " is : " + DealershipService(dealership1));
 
     }
 
