@@ -8,50 +8,48 @@ package com.alimaa.classes.IntroToClassesExercises;
 
 public class DealershipService {
 
-
-//    public DealershipService(CarDealership dealership, Car addCar) {
-//
-//    }
-    // this connects the 'car dealership class' to the service by running the car dealership class as an argument
-    // connecting the 'Car' class to the 'Dealership Service' ny running the 'Car' class as an argument
-
     // COUNTING THE NUMBER OF CARS IN THE DEALERSHIP
-    public int countingCars(CarDealership dealership, Car addingCar) { //NEW METHOD TO COUNT THE NUMBER OF CARS IN THE DEALERSHIP, will return an INT
+    public int countingCars(CarDealership dealership) {
+        //NEW METHOD TO COUNT THE NUMBER OF CARS IN THE DEALERSHIP, will return an INT
         // CALLING ON THE 'CAR DEALERSHIP' CLASS TO GET ALL THE PROPERTIES, RENAMING IT DEALERSHIP
 
-        int totalNulls = 0; // stating that the total nulls is at 0
+        int currentCarsInDealership = 0; // stating that the current cars in the dealership starts at 0
 
-        for (int i = 0; i < dealership.getCarsInStock().length; i++) { // for i loop
-            if (dealership.getCarsInStock()[i] == null) {
-                dealership.getCarsInStock()[i] = addingCar;
-
-//                totalNulls++; // if the first car in stock within the loop is equal to null
-                // i.e. there is no car in there then the total nulls increases by one each time it goes through the loop.
-                // this will stop at the dealership's max car display number.
+        for (int i = 0; i < dealership.getCarsInStock().length; i++) { // for i loop get cars . length incrementing by 1 each time
+            if (dealership.getCarsInStock()[i] != null) { // if the get cars in stock is not equal to null i.e. then its full
+                currentCarsInDealership++; // increment the number of cars currently in the dealership by 1
             }
+
         }
-        int numberOfCars = dealership.getMaxCarDisplayNumber() - totalNulls; // defines the 'number of cars' as the 'max car display number' minus the 'total number of nulls'
+        return currentCarsInDealership;  // returning the number of current cars in the dealership
 
-        return numberOfCars;
+    }
 
-//
-//        return numberOfCars; // returns the total number of cars within the dealership
 
-//        if (numberOfCars < dealership.getMaxCarDisplayNumber()) {
-////            System.out.println(CarDealership);
-//        }
+    // METHOD TO add cars to THE DEALERSHIP
+    public void addingCarToDealership(CarDealership dealership, Car car) {
 
-        //     WRITE A METHOD TO ADD CARS TO DEALERSHIP
-//     if the number of cars (i.e. maxCarDisplay - totalNulls) is less than the maxCarDisplay then you can add in another car
-        // else its full and can throw exception
+        // CALLING ON THE 'CAR DEALERSHIP' CLASS AND THE CAR CLASS
 
-//
+        for (int i = 0; i < dealership.getCarsInStock().length; i++) { // for i loop getting the length of get cars in stock variable
+            if (dealership.getCarsInStock()[i] == null) { // if get cars in stock is equal to null then that means theres an empty space so the next line of code can run
+                dealership.getCarsInStock()[i] = car; // if it is null then get cars in stock is equal to car object
+                break; // breaks after this loop
+            }
 
-//        public void addCarsToDealership(Car addCarToDealership) {
-//        }
+        }
+
     }
 
 }
 
 
-//        public String findCarByManufacturer()
+
+
+
+
+
+
+
+
+
