@@ -1,4 +1,4 @@
-package com.alimaa;
+package com.alimaa.random;
 
 import com.github.javafaker.Faker;
 
