@@ -1,6 +1,7 @@
 package com.alimaa.data_structures_and_algorithms;
 
 import java.util.HashMap;
+import java.util.stream.DoubleStream;
 
 public class MostOccurences {
 
