@@ -9,18 +9,18 @@ public class MostOccurences {
 
     public HashMap<String, Integer> check(String input) {
         HashMap<String, Integer> map = new HashMap<>();
-        // .split because we want the individual numbers and it's currently a String and .
+        // .split because we want the individual numbers and it's currently a String and in this case .split will split the String everytime there is a comma
         String[] split = input.split(",");
         // enhanced for loop
-        for (String e : split) {
+        for (String e : split) { // looping through the array called split and looking at each element in the array (e = element)
             // if condition
             if (!map.containsKey(e)) {
                 // if the map doesn't contain "e" (element) then
                 map.put(e, 1); // put "e" in the map and setting the value as 1 for each key
             } else {
                 // if it does contain that element then add one to that key within the map
-                int count = map.get(e) + 1;
-                map.put(e, count);
+                int count = map.get(e) + 1; // creating the variable to add 1 each time there's a repeat of the same element
+                map.put(e, count); // putting it in the count variable with that element in the map
             }
         }
         return map;
