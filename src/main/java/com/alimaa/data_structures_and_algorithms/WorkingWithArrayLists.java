@@ -9,6 +9,26 @@ import java.util.Vector;
 
 public class WorkingWithArrayLists {
 
+
+    // Lists can work with objects
+// list contains values which are elements hence the e for element
+
+// List<Person> people = new <Person> --> preferred way
+
+// we want to specify something
+// Generic type
+// <E> - element
+// <T> - type
+// <K> - key (for maps)
+// <V> - value (for maps)
+// <N> - number
+
+
+// Maps
+// for maps you need 2 things, the Key and the Value
+// K - Key can be any data type
+// V-  value
+
             static class Person {
                 String getFoo() {
                     return "bar";
@@ -98,21 +118,3 @@ public class WorkingWithArrayLists {
             }
         }
 
-// Lists can work with objects
-// list contains values which are elements hence the e for element
-
-// List<Person> people = new <Person> --> preferred way
-
-// we want to specify something
-// Generic type
-// <E> - element
-// <T> - type
-// <K> - key (for maps)
-// <V> - value (for maps)
-// <N> - number
-
-
-// Maps
-// for maps you need 2 things, the Key and the Value
-// K - Key can be any data type
-// V-  value

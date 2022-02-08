@@ -4,6 +4,10 @@ import java.util.HashMap;
 
 public class MostOccurences {
 
+    //Given the following array of strings. String[] input = "1,1,1,1,3,4,5,6,7,7,7,8,8";
+    //Find the number of occurences for each element
+//    Create a method. Think about the return type and parameters
+//    Write unit tests for your method
 
     String input = "1,1,1,1,3,4,5,6,7,7,7,8,8";
 
