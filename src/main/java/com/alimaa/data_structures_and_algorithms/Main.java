@@ -3,6 +3,7 @@ package com.alimaa.data_structures_and_algorithms;
 import jdk.swing.interop.SwingInterOpUtils;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
 
@@ -16,9 +17,8 @@ public class Main {
 
         MostNumberOfOccurences mostNumberOfOccurences = new MostNumberOfOccurences();
 
-        String[] input = {"1","1","1","1","3","4","5","6","7","7","7","8","8"};
+        System.out.println(mostNumberOfOccurences.modeNumber(mostOccurences.input));
 
-//        mostNumberOfOccurences.modeOccurences(input);
 
 
 
