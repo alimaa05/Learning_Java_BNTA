@@ -15,7 +15,8 @@ public class MostOccurences {
     // Create a method. Think about the return type and parameters
     //Write unit tests for your method
 
-    String input = "1,1,1,1,3,4,5,6,7,7,7,8,8";
+//    String input = "1,1,1,1,3,4,5,6,7,7,7,8,8";
+
 
     // method called check
     public HashMap<String, Integer> check(String input) {
