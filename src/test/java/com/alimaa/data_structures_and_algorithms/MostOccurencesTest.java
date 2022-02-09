@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MostOccurencesTest {
 
     @Test
-    void check() {
+    void itCanReturnTheMostOccurrenceForEachElement() {
         // Given
         MostOccurences mostOccurences = new MostOccurences(); // instance of the class
 

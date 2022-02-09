@@ -37,8 +37,10 @@ public class MostNumberOfOccurences {
             if (entry.getValue() >= max) {
                 // if value is greater than max i.e. 0 we're gonna replace 0 with the value of that entry point
                 max = entry.getValue();
-                // to add corresponding key from entry to list called maxvalue
+                // to add corresponding key from entry to String list called maxvalue
                 maxValues.add(entry.getKey());
+
+            } else {
 
             }
         }

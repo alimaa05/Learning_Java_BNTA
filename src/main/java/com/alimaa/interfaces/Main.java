@@ -1,6 +1,7 @@
 package com.alimaa.interfaces;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -19,7 +20,7 @@ public class Main {
         Person alimaa = new Person("Alimaa",vehicles);
 
 
-        System.out.println(alimaa);
+        System.out.println(Arrays.toString(vehicles.toArray()));
 
     }
 
