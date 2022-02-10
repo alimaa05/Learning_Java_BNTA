@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MostNumberOfOccurencesTest {
 
     @Test
-    void itCanReturnMostCommonNumberWithOnlyOneMode() {
+    void CanReturnMostCommonNumberWithOnlyOneMode() {
         // Given
         MostNumberOfOccurences mostNumberOfOccurences = new MostNumberOfOccurences(); // instance of the class
 
@@ -31,11 +31,29 @@ class MostNumberOfOccurencesTest {
     }
 
 
-    // returnMostCommonNumberWhenMoreThanOneMode
+    //
+
+    @Test
+    void CanReturnMostCommonNumberWhenMoreThanOneMode() {
+        // Given
+        MostNumberOfOccurences mostNumberOfOccurences = new MostNumberOfOccurences(); // instance of the class
+
+        String input = "7,7,1,3,1,7,5,3,3,3,7";
+
+        // When
+        List<String> actual = mostNumberOfOccurences.modeNumber(input);
+        // data structure of our method we want to test
+        // and what we want to test
+
+        // Then
+        List<String> expected = Arrays.asList("3", "7");
+
+        assertThat(actual).isEqualTo(expected);
+    }
 
 
     @Test
-    void itCanReturnEmptyListWhenInputEmpty() {
+    void CanReturnEmptyListWhenInputEmpty() {
         // Given
         MostNumberOfOccurences mostNumberOfOccurences = new MostNumberOfOccurences(); // instance of the class
 
@@ -54,7 +72,7 @@ class MostNumberOfOccurencesTest {
 
 
     @Test
-    void itCanReturnEmptyListWhenInputNull() {
+    void CanReturnEmptyListWhenInputNull() {
         // Given
         MostNumberOfOccurences mostNumberOfOccurences = new MostNumberOfOccurences(); // instance of the class
 
