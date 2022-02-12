@@ -1,6 +1,6 @@
 package com.alimaa.arrays_conditions_methods_exercies;
 
-public class Exercise6ArraysConditionalsMethods {
+public class Exercise6ArraysConditionsMethods {
       /*
         Create a package called email
         Then have a method called validateEmail that return true of false if input is valid email
