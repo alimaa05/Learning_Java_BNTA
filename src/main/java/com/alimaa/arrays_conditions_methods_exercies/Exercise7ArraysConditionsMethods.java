@@ -31,9 +31,14 @@ public class Exercise7ArraysConditionsMethods {
                 maxLength = s.length();
                 // initialising that the placeholder longestString is equal to s -- i.e. the variable 'longestString' will have the value of 's'
                 longestString = s;
-            }  // returning longestString - it's the string initialised at the top which is now each to 's' which holds the values of the String array
-
-        }
+            }
+            // if 's' is not bigger than the maxlength but if it is equal to the maxLength then this will be executed
+            else if (s.length() == maxLength) {
+                // longestLength which is the placeholder for the previous element from the array
+                // is now equal to that previous element and a space and add the new element from the array i.e. 's'
+                 longestString = longestString + " " + s;
+            }
+        }// returning longestString - it's the string initialised at the top which is now each to 's' which holds the values of the String array
         return longestString;
     }
 
