@@ -32,6 +32,15 @@ package com.alimaa.classes.IntroToClassesExercises;
 //Hint: You will need some way of finding the first empty slot in the array to save the Car in. Maybe checking each slot in the array in turn would help?
 
 
+// Q7 Write a method for the dealership called findCarByManufacturer which takes a String as a parameter and returns a Car object.
+// The method should return the first Car the dealership has in stock with a manufacturer property
+// matching the value passed to the method.
+// Hint 1: Think carefully about how you will access the information you need from the Cars.
+// Remember the methods you wrote in exercise 2...
+// Hint 2: To test this in Main you will need to:
+// - create some Car objects - add them to the Dealership -
+// store the result of your findCarByManufacturer method to a variable - print the variable
+
 public class Main {     // MAIN CLASS
     public static void main(String[] args) {
         Car firstCar = new Car(                // FIRST_CAR OBJECT
@@ -54,6 +63,27 @@ public class Main {     // MAIN CLASS
         System.out.println("-----------------");
 
 
+        Car thirdCar = new Car(                  // SECOND_CAR OBJECT
+                "Fiat",
+                9_000,
+                EngineType.electric);
+        System.out.println(thirdCar.toString());
+        System.out.println("-----------------");
+
+        Car fourthCar = new Car(                  // SECOND_CAR OBJECT
+                "BMW",
+                30_000,
+                EngineType.electric);
+        System.out.println(fourthCar.toString());
+        System.out.println("-----------------");
+
+        Car fifthCar = new Car(                  // SECOND_CAR OBJECT
+                "Ford",
+                8_000,
+                EngineType.petrol);
+        System.out.println(fifthCar.toString());
+        System.out.println("-----------------");
+
 //        Car[] myCarArray = new Car[] {firstCar, secondCar };
 
         CarDealership dealership = new CarDealership(
@@ -73,7 +103,7 @@ public class Main {     // MAIN CLASS
         // properties of the second dealership
 
 
-// THIS OBJECT IS RETURNING THE NUMBER OF CARS THE DEALERSHIP CURRENTLY HAS IN STOCK
+// Q6 THIS OBJECT IS RETURNING THE NUMBER OF CARS THE DEALERSHIP CURRENTLY HAS IN STOCK
 
 
         DealershipService dealershipService = new DealershipService(); // calling on the DealershipService class
@@ -86,8 +116,18 @@ public class Main {     // MAIN CLASS
         System.out.println("-----------------");
 
         System.out.println("Number of cars in " + dealership1.getCarDealershipName() + " = ");// printing the number of cars in the first dealership object
-        dealershipService.addingCarToDealership(dealership1, secondCar); // printing second car to dealership one
+        dealershipService.addingCarToDealership(dealership1, thirdCar);
+        dealershipService.addingCarToDealership(dealership1, fourthCar);// printing third,fourth and fifth car to dealership one
+        dealershipService.addingCarToDealership(dealership1, fifthCar);
         System.out.println(dealershipService.countingCars(dealership1)); // printing the number of cars in the dealership after adding the car to it
+
+
+// Q7  Write a method for the dealership called findCarByManufacturer which takes a String as a parameter and returns a Car object.
+
+        // store the result of findCarByManufacturer method to variable
+        String resultFindCarByManufacturer = dealershipService.findCarByManufacturer(dealership,firstCar);
+        // print the variable
+        System.out.println(resultFindCarByManufacturer);
 
     }
 

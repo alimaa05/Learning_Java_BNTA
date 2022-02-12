@@ -23,17 +23,17 @@ public class Exercise7ArraysConditionsMethods {
 
         // enhanced for loop --> s is a placeholder
         //  and everytime you loop through the index(element) in array it will be temporarily placed in the placeholder
-        for (String s: helloInDifferentLanguages) {
+        for (String s : helloInDifferentLanguages) {
 
             // if condition --> if the length of element is bigger then 'maxLength' which is equal to 0
-            if (s.length()>maxLength){
+            if (s.length() > maxLength) {
                 // then maxLength will be replaced and now be equal to the element i.e. s.length
                 maxLength = s.length();
                 // initialising that the placeholder longestString is equal to s -- i.e. the variable 'longestString' will have the value of 's'
                 longestString = s;
-            }
+            }  // returning longestString - it's the string initialised at the top which is now each to 's' which holds the values of the String array
+
         }
-        // returning longestString - it's the string initialised at the top which is now each to 's' which holds the values of the String array
         return longestString;
     }
 
