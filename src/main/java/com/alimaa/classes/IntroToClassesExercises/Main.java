@@ -41,6 +41,9 @@ package com.alimaa.classes.IntroToClassesExercises;
 // - create some Car objects - add them to the Dealership -
 // store the result of your findCarByManufacturer method to a variable - print the variable
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {     // MAIN CLASS
     public static void main(String[] args) {
         Car firstCar = new Car(                // FIRST_CAR OBJECT
@@ -84,7 +87,9 @@ public class Main {     // MAIN CLASS
         System.out.println(fifthCar.toString());
         System.out.println("-----------------");
 
-//        Car[] myCarArray = new Car[] {firstCar, secondCar };
+        Car[] myCarArray = new Car[] {firstCar, secondCar, thirdCar, fourthCar, fifthCar};
+        System.out.println(Arrays.toString(myCarArray));
+        System.out.println("-----------------");
 
         CarDealership dealership = new CarDealership(
                 "AlimaasDealership",
@@ -111,6 +116,7 @@ public class Main {     // MAIN CLASS
         dealershipService.addingCarToDealership(dealership, firstCar);
         dealershipService.addingCarToDealership(dealership, secondCar);
         System.out.println(dealershipService.countingCars(dealership)); // returns the number of cars being added into our dealership
+        System.out.println(Arrays.toString(dealership.getCarsInStock()));
 
 
         System.out.println("-----------------");
@@ -120,14 +126,21 @@ public class Main {     // MAIN CLASS
         dealershipService.addingCarToDealership(dealership1, fourthCar);// printing third,fourth and fifth car to dealership one
         dealershipService.addingCarToDealership(dealership1, fifthCar);
         System.out.println(dealershipService.countingCars(dealership1)); // printing the number of cars in the dealership after adding the car to it
+        System.out.println(Arrays.toString(dealership1.getCarsInStock()));
+
+        System.out.println("-----------------");
+
 
 
 // Q7  Write a method for the dealership called findCarByManufacturer which takes a String as a parameter and returns a Car object.
 
-        // store the result of findCarByManufacturer method to variable
-        String resultFindCarByManufacturer = dealershipService.findCarByManufacturer(dealership,firstCar);
-        // print the variable
-        System.out.println(resultFindCarByManufacturer);
+
+        System.out.println("Enter a manufacturer: ");
+        Scanner scanner = new Scanner(System.in);
+
+        String input = scanner.nextLine();
+
+        System.out.println(dealershipService.findCarByManufacturer(dealership1, input));
 
     }
 

@@ -6,6 +6,8 @@ package com.alimaa.classes.IntroToClassesExercises;
 //------
 //Hint: You will need some way of finding the first empty slot in the array to save the Car in. Maybe checking each slot in the array in turn would help?
 
+import java.util.Scanner;
+
 public class DealershipService {
 
     // COUNTING THE NUMBER OF CARS IN THE DEALERSHIP
@@ -43,13 +45,14 @@ public class DealershipService {
 
     // Q7  Write a method for the dealership called findCarByManufacturer which takes a String as a parameter and returns a Car object.
 // should return the first Car the dealership has in stock - with manufacturer property matching the value passed to the method
-    public String findCarByManufacturer(CarDealership carDealership, Car car) {
+    public Car findCarByManufacturer(CarDealership carDealership, String input) {
 
-        String Car = "";
-        for (int i = 0; i < carDealership.getCarsInStock().length; i++) {
-//            Car = carDealership.getCarsInStock();
+        for (Car car : carDealership.getCarsInStock()) {
+            if (car.getManufacturer().equals(input)) {
+                return car;
+            }
         }
-        return Car;
+        return null;
     }
 
 

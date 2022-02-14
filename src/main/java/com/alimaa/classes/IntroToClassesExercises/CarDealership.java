@@ -18,6 +18,10 @@ public class CarDealership { // CAR DEALERSHIP CLASS
     private Car[] carsInStock; // THIS PROPERTY USES AN ARRAY ALLOWS US TO STORE ALL THE CARS WE HAVE IN STOCK UNDER THE SAME VARIABLE
 
 
+    public CarDealership() {
+
+    }
+
     public CarDealership(String carDealershipName,
                          // THE CONSTRUCTOR ALLOWS US TO MAKE NEW OBJECTS
                          // OUR CAR DEALERSHIP OBJECT WILL HAVE THESE INDIVIDUAL PROPERTIES WHICH WE CAN SET VALUES FOR
