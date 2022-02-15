@@ -45,13 +45,19 @@ public class DealershipService {
 
     // Q7  Write a method for the dealership called findCarByManufacturer which takes a String as a parameter and returns a Car object.
 // should return the first Car the dealership has in stock - with manufacturer property matching the value passed to the method
+
+    // creating a method that takes in our Car class properties and the method id called findCarByManufacturer
+    // it can take in the CarDealership method and it takes in a String input (the String input in this case is whatever the user enters)
     public Car findCarByManufacturer(CarDealership carDealership, String input) {
 
+        // using an enhanced for loop - everytime we loop through carDealership carsInStock
+        // it will be placed in the placeholder car
         for (Car car : carDealership.getCarsInStock()) {
+            // if the manufacturer from our car class is equal to the input users entered then it will return the car
             if (car.getManufacturer().equals(input)) {
                 return car;
             }
-        }
+        } // if not then it will return null 
         return null;
     }
 

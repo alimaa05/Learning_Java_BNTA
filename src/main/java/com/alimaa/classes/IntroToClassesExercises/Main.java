@@ -135,11 +135,15 @@ public class Main {     // MAIN CLASS
 // Q7  Write a method for the dealership called findCarByManufacturer which takes a String as a parameter and returns a Car object.
 
 
-        System.out.println("Enter a manufacturer: ");
+        // writing a scanner so when users input a manufacturer name, it will return the manufacturer if that exists within one of the carDealerships
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a manufacturer: ");
 
         String input = scanner.nextLine();
 
+        // this is printing out the name of the manufacturer from dealership1 based on the input put by the user
+        // - i.e. if what they entered exists within dealership1 then it will return that information
         System.out.println(dealershipService.findCarByManufacturer(dealership1, input));
 
     }
