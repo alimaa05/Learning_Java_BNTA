@@ -57,7 +57,7 @@ public class DealershipService {
             if (car.getManufacturer().equals(input)) {
                 return car;
             }
-        } // if not then it will return null 
+        } // if not then it will return null
         return null;
     }
 
